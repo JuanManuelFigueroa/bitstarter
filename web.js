@@ -9,7 +9,7 @@ fs.readFile('index.html', function (err, data) {
   if (err) throw err;
   
 var buffer=new Buffer(data,'utf-8');
-response.send(data);
+response.send(buffer.toString());
 
 });
 });
