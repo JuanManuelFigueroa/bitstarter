@@ -13,7 +13,8 @@
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,300,400,600,700,800" 
           rel="stylesheet" type="text/css">
     <style type="text/css">
-
+	.navbar-inverse .navbar-inner{background-color:#0055BB;background-image:-moz-linear-gradient(top, #0055BB, #111111);background-image:-webkit-gradient(linear, 0 0, 0 100%, from(#222222), to(#111111));background-image:-webkit-linear-gradient(top, #222222, #111111);background-image:-o-linear-gradient(top, #222222, #111111);background-image:linear-gradient(to bottom, #222222, #111111);background-repeat:repeat-x;filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff222222', endColorstr='#ff111111', GradientType=0);border-color:#252525;}
+	
       /* Large desktop */
       @media (min-width: 980px) { 
         body {
@@ -112,12 +113,14 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="brand" href="#">Bitstarter</a>
+          <a class="brand" href="#">Drone Watch</a>
           <div class="nav-collapse collapse">
             <ul class="nav">
               <li class="active"><a href="#">Home</a></li>
               <li><a href="#about">About</a></li>
               <li><a href="#contact">Contact</a></li>
+			  <li><a href="#contact">FAQ</a></li>
+			  <li><a href="#contact">Comments</a></li>
             </ul>
           </div><!--/.nav-collapse -->
         </div>
@@ -133,19 +136,164 @@
       <!-- www.google.com/fonts/specimen/Ubuntu#pairings -->
       <div class="row-fluid heading">
         <div class="span12">
-          <h1>Product</h1>
+          <h1>A neighborhood drone watch.</h1>
         </div>
       </div> 
       <div class="row-fluid subheading">
-        <div class="span12">
+        <div class="span8 offset2">
           <!-- Special typography from Bootstrap for lead paragraph. -->
           <!-- http://twitter.github.io/bootstrap/base-css.html#typography -->
-          <p class="lead">One sentence description.</p>
+          <p class="lead">Take a fleet of Parrot AR Drones, equip them with cameras, microphones, speakers, and floodlights, and orchestrate the whole shebang with the ar-drone node module. </p>
         </div>
       </div>
+	  <div class="row-fluid carousel">
+		<div class="span8 offset2">
+              <div class="bs-docs-example">
+              <div id="myCarousel" class="carousel slide">
+                <ol class="carousel-indicators">
+                  <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                  <li data-target="#myCarousel" data-slide-to="1"></li>
+                  <li data-target="#myCarousel" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                  <div class="item active">
+                    <img src="http://imgur.com/A46uCH9.jpg" alt="">
+                    <div class="carousel-caption">
+                      <h4>What are Drones?</h4>
+                      <p>Drones, are aircraft either controlled by ‘pilots’ from the ground or increasingly, autonomously following a pre-programmed mission.</p>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <img src="http://imgur.com/onnJFZ6.jpg" alt="">
+                    <div class="carousel-caption">
+                      <h4>Why use Drones?</h4>
+                      <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <img src="http://imgur.com/F2j6eEq.png" alt="">
+                    <div class="carousel-caption">
+                      <h4>Drones for Surveillance</h4>
+                      <p>Aerial surveillance of large areas is made possible with low cost UAV systems. Surveillance applications include livestock monitoring, wildfire mapping, pipeline security, home security, road patrol, and anti-piracy. The trend for the use of UAV technology in commercial aerial surveillance is expanding rapidly with increased development of automated object detection approaches.</p>
+                    </div>
+                  </div>
+                </div>
+                <a class="left carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+                <a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
+              </div>
+            </div>
+		</div>
+		<div class="span2"></div>
+		</div>
+
+		<div class="row-fluid tabs">
+			<div class="span8 offset2">
+				<div class="tabbable"> <!-- Only required for left/right tabs -->
+				<ul class="nav nav-tabs">
+				<li class="active"><a href="#tab1" data-toggle="tab">Learn More</a></li>
+				<li class=""><a href="#tab2" data-toggle="tab">What people said</a></li>
+				<li class=""><a href="#tab3" data-toggle="tab">News</a></li>
+				</ul>
+
+				<div class="tab-content">
+				<div class="tab-pane active" id="tab1">				
+					<div class="row-fluid">
+					<div class="span6">
+						<iframe width="385" height="217" frameborder="0" allowfullscreen="" src="//www.youtube.com/embed/QIdG_AO0Mtg"></iframe>
+					</div>
+					<div class="span5 offset1">
+					  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap.</p>				  
+					 </div>
+					 </div>
+				</div>
+				<div class="tab-pane" id="tab2">
+				
+					<div class="row-fluid">
+						<div class="span5">
+							<p>Could drones help to reduce crimes in you neighborhood?</p>
+							<div data-toggle="buttons-radio" class="btn-group">
+							  <button class="btn btn-primary" type="button">Yes</button>
+							  <button class="btn btn-primary" type="button">No</button>						  
+							</div>
+						</div>
+						<div class="span5 offset1">
+							<img src="http://i.imgur.com/dWR7JQA.png" class="img-polaroid">
+						</div>
+					</div>
+				</div>
+				<div class="tab-pane" id="tab3">
+					<div class="row-fluid">
+						<div class="span12">
+							<div class="accordion" id="accordion2">
+								<div class="accordion-group">
+									<div class="accordion-heading">
+									<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
+									Drone future up in air, needs approval
+									</a>
+									</div>
+									<div id="collapseOne" class="accordion-body collapse in">
+									<div class="accordion-inner">
+									Anim pariatur cliche...
+									</div>
+									</div>
+								</div>
+								<div class="accordion-group">
+									<div class="accordion-heading">
+									<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">									
+									NASA Drones Will Watch Hurricanes from Birth
+									</a>
+									</div>
+									<div id="collapseTwo" class="accordion-body collapse">
+									<div class="accordion-inner">
+									Anim pariatur cliche...
+									</div>
+									</div>
+								</div>
+								<div class="accordion-group">
+									<div class="accordion-heading">
+									<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseThree">																		
+										Russia to buy Drones from the UAE
+									</a>
+									</div>
+									<div id="collapseThree" class="accordion-body collapse">
+									<div class="accordion-inner">
+									Anim pariatur cliche...
+									</div>
+									</div>
+								</div>
+								<div class="accordion-group">
+									<div class="accordion-heading">
+									<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseFour">																		
+										Drones coming to Latin America
+									</a>
+									</div>
+									<div id="collapseFour" class="accordion-body collapse">
+									<div class="accordion-inner">
+									Anim pariatur cliche...
+									</div>
+									</div>
+								</div>
+							</div>															
+						</div>
+					</div>
+				</div>
+				</div>
+				</div>	
+				<hr>
+			</div>
+			<div class="span2"></div>
+		</div>
+				
       <div class="row-fluid pitch">
-        <div class="span5 offset1 video">
-          <img class="img-polaroid" src="http://placehold.it/480x300">
+        <div class="span3 offset2 video">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+            porta, dui sagittis hendrerit rutrum, nunc leo tempus nisl, eu
+            mollis justo velit at nunc. Fusce nec egestas sem. Donec
+            fringilla ante lectus, a pellentesque lacus dignissim ac. Sed
+            volutpat lorem ut congue malesuada. In facilisis scelerisque
+            turpis sed lacinia.
+          </p>
         </div>
 
         <!-- We define a new 'actions' div to contain statistics, order, and share buttons.-->
@@ -192,96 +340,14 @@
             <button class="btn btn-facebook"><i class="icon-facebook"></i> | Facebook</button>
           </div>
         </div>
-      </div>
-
-      <!-- Beyond this part the marketing copy begins. -->
-      <!-- https://developer.mozilla.org/en-US/docs/Web/CSS/text-align -->
-      <!-- http://twitter.github.io/bootstrap/base-css.html#images -->
-      <!-- http://placehold.it -->
-      <div class="row-fluid section1">
-        <div class="span5 offset1 asset">
-          <img class="img-polaroid" src="http://placehold.it/480x300">
-        </div>
-        <div class="span5 copy">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-            porta, dui sagittis hendrerit rutrum, nunc leo tempus nisl, eu
-            mollis justo velit at nunc. Fusce nec egestas sem. Donec
-            fringilla ante lectus, a pellentesque lacus dignissim ac. Sed
-            volutpat lorem ut congue malesuada. In facilisis scelerisque
-            turpis sed lacinia. Donec in orci lectus. Donec auctor semper
-            quam, eget rhoncus purus fringilla id. Phasellus id nibh eu
-            risus ultrices adipiscing.  Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. Donec porta, dui sagittis hendrerit
-            rutrum, nunc leo tempus nisl, eu mollis justo velit at
-            nunc. Fusce nec egestas sem. Donec fringilla.
-          </p>
-        </div>
-      </div>
-
-      <div class="row-fluid section2">
-        <div class="span5 offset1 copy copy-right">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-            porta, dui sagittis hendrerit rutrum, nunc leo tempus nisl, eu
-            mollis justo velit at nunc. Fusce nec egestas sem. Donec
-            fringilla ante lectus, a pellentesque lacus dignissim ac. Sed
-            volutpat lorem ut congue malesuada. In facilisis scelerisque
-            turpis sed lacinia. Donec in orci lectus. Donec auctor semper
-            quam, eget rhoncus purus fringilla id. Phasellus id nibh eu
-            risus ultrices adipiscing.  Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. Donec porta, dui sagittis hendrerit
-            rutrum, nunc leo tempus nisl, eu mollis justo velit at
-            nunc. Fusce nec egestas sem. Donec fringilla.
-          </p>
-        </div>
-        <div class="span5 asset">
-          <img class="img-polaroid" src="http://placehold.it/480x300">
-        </div>
-      </div>
-
-      <!-- For the FAQ, we introduce a little bit of JS, using the accordion. -->
-      <!-- This brings in jquery.js and bootstrap.js as dependencies. -->
-      <!-- http://twitter.github.io/bootstrap/javascript.html#collapse -->
-      <div class="row-fluid faq">
-          <div class="span10 offset1">
-            <h3>FAQ</h3>
-            <div class="accordion" id="accordion2">
-              <div class="accordion-group">
-                <div class="accordion-heading">
-                  <a class="accordion-toggle" data-toggle="collapse"
-                     data-parent="#accordion2" href="#collapseOne">
-                    What does FAQ stand for?
-                  </a>
-                </div>
-                <div id="collapseOne" class="accordion-body collapse">
-                  <div class="accordion-inner">
-                    Frequently Asked Question.
-                  </div>
-                </div>
-              </div>
-              <div class="accordion-group">
-                <div class="accordion-heading">
-                  <a class="accordion-toggle" data-toggle="collapse"
-                     data-parent="#accordion2" href="#collapseTwo">
-                    What's a Frequently Asked Question?
-                  </a>
-                </div>
-                <div id="collapseTwo" class="accordion-body collapse">
-                  <div class="accordion-inner">
-                    A question which is commonly asked by users.
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-      </div>
-
+      
+	  </div>
+	  
       <!-- Not crucial, but we put this under a CC By-SA 3.0 license. -->
       <!-- http://creativecommons.org/licenses/ -->
       <div class="row-fluid footer">
-        <div class="span12">
+        <div class="span8 offset2">
+		<hr>
           <p>This work is licensed under
             the <a href="http://creativecommons.org/licenses/by-sa/3.0/">CC
               By-SA 3.0
